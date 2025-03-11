@@ -1,0 +1,35 @@
+:root {
+    --fondoPrincipal: #000000;
+    --fondoLinks: #FFFFFF;
+    --FondoModal: #000fff;
+    --FondoSpace: #156FFF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {}
+
+.contLinks {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.space {
+    width: 20%;
+    height: 109%;
+    background-color: var(--FondoSpace);
+    transform: skew(-20deg);
+    background-image: url(./Space1.jpg);
+    background-size: cover;
+
+}
