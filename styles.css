@@ -64,6 +64,7 @@ body {
     justify-content: space-around;
 
 }
+
 /* FOTO Y TITULO */
 .objectfitCont {
     display: flex;
@@ -101,7 +102,6 @@ body {
 .tituloHeader {
     display: flex;
     flex-direction: column;
-    line-height: 0px;
     text-align: center;
 }
 
@@ -110,56 +110,58 @@ body {
     font-weight: 700;
     text-align: center;
 }
+
 /* ENLACES */
 .enlaces {
+    width: 100%;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-auto-rows: 39rem; */
+    justify-content: center;
     column-gap: 2rem;
     row-gap: 2rem;
-  }
-  
-  
-  .enlaces__item:nth-child(1) {
-    grid-column-start: span 1;
-  }
-  
-  .enlaces__item:nth-child(2) {
-    grid-column-start: span 1;
-  }
-  
-  .enlaces__item:nth-child(3) {
-    grid-column-start: span 1;
-  }
-  
-  .enlaces__item:nth-child(4) {
-    grid-column-start: span 1;
-  }
-  
-  @media (max-width: 768px) {
-    .enlaces {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      /* grid-auto-rows: 50rem; */
-    }
-  
-    h2 {
-      font-size: 1.8rem;
-    }
-  
-    p {
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .enlaces {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+}
 
-      /* grid-auto-rows: 50rem; */
+
+.enlaces__item:nth-child(1) {
+    grid-column-start: span 1;
+}
+
+.enlaces__item:nth-child(2) {
+    grid-column-start: span 1;
+}
+
+.enlaces__item:nth-child(3) {
+    grid-column-start: span 1;
+}
+
+.enlaces__item:nth-child(4) {
+    grid-column-start: span 1;
+}
+
+@media (max-width: 768px) {
+    .enlaces {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-auto-rows: 50rem; */
     }
-  }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .enlaces {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
 
 .button {
     --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
