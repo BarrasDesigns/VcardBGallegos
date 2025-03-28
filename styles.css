@@ -1,3 +1,4 @@
+/* GLOBALES */
 :root {
     --fondoPrincipal: #000000;
     --fondoLinks: #FFFFFF;
@@ -40,7 +41,7 @@ body {
     width: 1000%;
     height: 100%;
     background-color: var(--FondoSpace);
-    transform: skew(-20deg);
+    transform: skew(-5deg);
 
 }
 
@@ -50,7 +51,6 @@ body {
     background-image: url(./Space1.jpg);
     background-position: center center;
     transition: 1s ease;
-    -webkit-filter: blur(2px);
 }
 
 .space:nth-child(1):hover {
@@ -64,7 +64,7 @@ body {
     justify-content: space-around;
 
 }
-
+/* FOTO Y TITULO */
 .objectfitCont {
     display: flex;
     justify-content: space-around;
@@ -102,23 +102,64 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 0px;
+    text-align: center;
 }
 
 .subtitulo {
-    color: white;
     font-size: 19px;
     font-weight: 700;
     text-align: center;
 }
-
+/* ENLACES */
 .enlaces {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-auto-rows: 39rem; */
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  
+  
+  .enlaces__item:nth-child(1) {
+    grid-column-start: span 1;
+  }
+  
+  .enlaces__item:nth-child(2) {
+    grid-column-start: span 1;
+  }
+  
+  .enlaces__item:nth-child(3) {
+    grid-column-start: span 1;
+  }
+  
+  .enlaces__item:nth-child(4) {
+    grid-column-start: span 1;
+  }
+  
+  @media (max-width: 768px) {
+    .enlaces {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* grid-auto-rows: 50rem; */
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .enlaces {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      /* grid-auto-rows: 50rem; */
+    }
+  }
 
 .button {
     --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -130,7 +171,7 @@ body {
     padding: 0.7em 1em;
     border-radius: 50%;
     min-height: 2.4em;
-    min-width: 3em;
+    max-width: 13em;
     display: flex;
     align-items: center;
     gap: 0.5em;
