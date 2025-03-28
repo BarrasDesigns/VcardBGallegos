@@ -111,8 +111,24 @@ body {
     text-align: center;
 }
 
+/* CONTACTO */
+.contacto {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+}
+
+@media (max-width: 480px) {
+    .contacto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ENLACES */
 .enlaces {
+    margin: 20px;
     width: 100%;
     display: grid;
     justify-items: center;
@@ -141,7 +157,6 @@ body {
 
 @media (max-width: 768px) {
     .enlaces {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-auto-rows: 50rem; */
     }
