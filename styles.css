@@ -171,6 +171,8 @@ body {
 
     cursor: pointer;
     padding: 0.7em 1em;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     min-height: 2.4em;
     max-width: 13em;
@@ -178,7 +180,7 @@ body {
     align-items: center;
     gap: 0.5em;
 
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.05em;
     line-height: 1;
     font-weight: bold;
